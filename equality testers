@@ -1,0 +1,17 @@
+include<iostream>
+
+using namespace std;
+
+int main() {
+
+	bool equal_result(false);
+	bool not_equal_result(false);
+
+	int num1{}, num2{};
+
+	printf("Enter two numbers: ");
+	cin >> num1 >> num2;
+	equal_result = (num1 == num2);
+	not_equal_result = (num1 != num2);
+	printf("Comparison result: %d\n", equal_result);
+	printf("Comparison result: %d\n", not_equal_result);
