@@ -1,0 +1,98 @@
+const int lower(10);
+const int upper(20);
+
+cout << "\n Enter an integer - the bounds are " << lower << " and " << upper << ":";
+cin >> num;
+
+bool within_bounds(false);
+within_bounds = (num > lower && num < upper);
+cout << num << " in between " << lower << " and " << upper << ":" << within_bounds << endl;
+
+Note:  this one will show if the value is within the bounds that means it should be hgher than lower and smaller than upper limit 
+
+
+
+
+
+
+
+cout << "\n Enter an integer - the bounds are " << lower << " and " << upper << ":";
+cin >> num;
+
+bool outside_bounds(false);
+outside_bounds = (num < lower || num> upper);
+cout << num << " outsde " << lower << " and " << upper << ";" << outside_bounds << endl;
+
+
+Note: this one shows if the both integers are outside the upper and lower limt both should be outside then only true will be shown else false 
+
+
+
+
+
+
+cout << "\n Enter an integer - the bounds are " << lower << " and " << upper << ":";
+cin >> num;
+
+bool on_bounds(false);
+on_bounds = (num == lower || num == upper);
+cout << num << " on bounds of " << lower << " and " << upper << ";" << on_bounds << endl;
+
+
+
+Note: in this we want to make sure that the integers should be on the lmit should be true only if the lower intger is 10 and upper in 20 and wiill be false in every other case
+
+
+
+
+EXAMPLE FOR AND & OR STATEMENT 
+
+
+bool wear_coat(false);
+double temperature{};
+int wind_speed{};
+
+
+const int wind_speed_for_coat{ 25 };
+const double temperature_for_coat{ 45 };
+
+cout << ("\nEnter the temperature in (F): ");
+cin >> temperature;
+cout << ("\nEnter windspeed in mph: ");
+cin >> wind_speed;
+
+wear_coat = (temperature < temperature_for_coat || wind_speed > wind_speed_for_coat);
+cout << " Do you need to wear a coat using OR? " << wear_coat << endl;
+
+wear_coat = (temperature < temperature_for_coat && wind_speed > wind_speed_for_coat); 
+cout << "Do you need to wear a coat using  AND? " << wear_coat << endl;
+
+
+Note: n this if temperature is above 25 then  and speed more thn 45 than  it will show true  usinf both AND and OR
+if the speed is hgh and temp is low then it will show true  in both cases
+and if temp is higher and speed is lower then OR wll be true and AND wiil be false 
+if both are smaller then also OR will be true and AND will be false 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
