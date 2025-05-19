@@ -1,0 +1,24 @@
+const int lower(10);
+const int upper(20);
+
+cout << "\n Enter an integer between " << lower << ":";
+cin >> num1;
+cout << num1 << ">" << lower << " is " << (num1 > lower) << endl;	
+
+cout << "\n Enter an integer between " << upper << ";";
+cin >> num1;
+cout << num1 << "<" << upper << " is " << (num1 > lower) << endl;
+
+cout << endl;
+
+
+
+cout << endl;
+return 0;
+
+
+
+
+Note  : here 2 constants are given 
+and we are tryn to compare if the 1st part ts lower that const 1 
+ and in 2nd part if the const in bigger than  or lower than upper limt 
