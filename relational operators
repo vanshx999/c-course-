@@ -1,0 +1,26 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+
+	int num1{}, num2{};
+	 
+	cout << boolalpha;
+	cout << "Enter 2 integers divided by space: ";
+	cin >> num1 >> num2;	
+	 
+	cout << "Comparison result: " << (num1 > num2)<< endl;
+	cout << "Comparison result: " << (num1 < num2) << endl;
+	cout << "Comparison result: " << (num1 <= num2) << endl;
+	cout << "Comparison result: " << (num1 >= num2) << endl;
+}
+
+
+
+
+
+
+
+
+Note : printf cant be used to display true and false t will show 0 and 1 as output so use cout 
