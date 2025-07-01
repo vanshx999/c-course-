@@ -1,0 +1,43 @@
+#include<iostream>
+
+
+using namespace std;
+
+int main() {
+	int num{};
+	const int target(10);
+
+	cout << "Enter a number and ill compare it to " << target << ";";
+	cin >> num;
+
+
+	if (num < target) {
+		cout << "\n==================================================" << endl;
+		cout << num << "is greater than " << target << endl;
+		int diff{ num - target };
+		cout << num << "is" << diff << "greater than" << target << endl;
+	}
+	else {
+		cout << "\n===================================================" << endl;
+		cout << num << " is less than " << target << endl;
+		int diff(target - num);
+		cout << num << " is " << diff << " less than " << target << endl;
+	}
+
+	cout << endl;
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+here if the if statement is true then it will execute but if its not correct then else statement will be printed
+
+
+
