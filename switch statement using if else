@@ -1,0 +1,55 @@
+include <iostream>
+using namespace std;
+
+int main() {
+    
+    char letter_grade{};
+
+    cout << "Enter your letter grade (A, B, C, D, F): ";
+	cin >> letter_grade;
+
+	switch (letter_grade)
+	{
+	    case 'a':
+		case 'A':
+			cout << " you need 90 or above for that" << endl;
+			break;
+		case 'b':
+		case 'B' :
+			cout << " you need 80 to 89 for that" << endl;
+			break;
+		case 'c':
+		case 'C':
+			cout << " you need  70 to 79 for that" << endl;
+			break;
+		case 'd':
+		case 'D':
+			cout << " you need 60 to 69 for that" << endl;
+			break;
+		case 'f':
+		case 'F':
+
+		{
+			char confirm{};
+			cout << " are you sure (Y/N): ";
+			cin >> confirm;
+			if (confirm == 'y' || confirm == 'Y') {
+				cout << "i guess you didnt study" << endl;
+			}
+			else if (confirm == 'n' || confirm == 'N') {
+				cout << " well you should have" << endl;
+			}
+			else
+				cout << " invald answer" << endl;
+		}
+
+			break;
+
+		default: 
+			cout << " nvalid grade" << endl;
+
+
+
+
+	  
+	}
