@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int num1{},num2{};
+
+    cout << "Enter two integers seperated by space: ";
+    cin >> num1 >> num2;
+
+    if (num1 != num2) {
+        cout << "Largest: " << ((num1 > num2) ? num1:num2) << endl;
+        cout << "Smallest: " << ((num1 < num2) ? num1:num2) << endl;
+ 
+    }
+    else {
+		cout << "Both numbers are equal." << endl;
+    }
+
+
+        return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+condtional operators are used instead of if else 
+it straightup adds the statement in prnt statement which saves a few lines of code but can not be used always but yeah is a good alteranative of if else 
