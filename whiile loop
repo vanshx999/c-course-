@@ -1,0 +1,34 @@
+int main() {
+    int number{};
+	cout << "Enter integer less than 100: ";
+    cin >> number;
+
+    while (number >= 100) {
+        cout << "Enter integer less than 100: ";
+        cin >> number;
+    }
+}
+
+here we entered an input where we  should add integer less than 100 f its bgger than that it will repeat and conitnue until integer less than 100 is wrtten in input 
+
+
+
+
+
+
+	bool done = false;
+	int number{0};
+
+    while (!done) {
+        cout << "Enter integer between 1 and 5: ";
+        cin >> number;
+
+        if (number <= 1 || number >= 5) 
+            cout << "try again" << endl;
+        else {
+            cout << "Thanks" << endl;
+            done = true;
+
+
+ her we ceated a bool flag nmes false if we get integer  out of the range the output will be shown as try agaiin and loop will contnue until the actual input is written one that is in the range 
+
