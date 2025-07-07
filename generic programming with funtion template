@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+
+
+	template<typename T>
+		T min(T a, T b) {
+		return(a < b) ? a : b;
+
+	}
+		template<typename T1, typename T2>
+		void func(T1 a, T2 b) {
+			std::cout << a << " " << b << std::endl;
+		}
+
+		int main() {
+			std::cout << "min<int>(4,6)" << std::endl;
+			std::cout << min(4, 6) << std::endl;
+			std::cout << min('F', 'A') << std::endl;
+			std::cout << min(5.3, 3.5) << std::endl;
+			std::cout << min(4 + 4 * 5, 5 + 3 * 2) << std::endl;
+	}
+
+
+
+
+
+here we created a template wth functions a and b and gave a few statements and gave a condition to print small value and hence we got the output 
